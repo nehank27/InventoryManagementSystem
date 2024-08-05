@@ -1,8 +1,65 @@
+/* globals.css */
 
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+body {
   margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(15, 23, 42); /* Light gray background */
 }
 
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.landing-title {
+  font-size: 3rem;
+  color: #007BFF; /* Bright blue */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background-color: #007BFF; /* Bright blue */
+  color: white;
+  &:hover {
+    background-color: #0056b3; /* Darker blue */
+  }
+}
+
+.modal-box {
+  background-color: #fff;
+  border: 2px solid #007BFF; /* Bright blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-box {
+  background-color: #ffffff;
+  border: 1px solid #007BFF; /* Bright blue border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-box {
+  background-color: #e9ecef; /* Light gray */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: #dee2e6; /* Slightly darker gray */
+  }
+}
+
+.button2 {
+  background-color: #FF0000; /* Bright blue */
+  color: white;
+  &:hover {
+    background-color: #69072D; /* Darker blue */
+  }
+}
